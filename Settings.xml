@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+	<FORMS>
+	    <OBJECT>TextBox</OBJECT>
+	    <ID>FirstName1</ID>
+	</FORMS>
+	<DBDETAIL>
+		<DBNAME>DBNAME</DBNAME>
+		<SSN>Mydb.connection.sqldriver</SSN>
+		<KEYWORD>DELETE</KEYWORD>
+		<KEYWORD>UPDATE</KEYWORD>
+		<KEYWORD>SELECT</KEYWORD>
+		<KEYWORD>INSERT</KEYWORD>
+		<KEYWORD>TABLE</KEYWORD>
+		<KEYWORD>VIEW</KEYWORD>
+		<RESRVEDAPP-TABNAME></RESRVEDAPP-TABNAME>
+		<RESRVEDAPP-TABNAME></RESRVEDAPP-TABNAME>
+		<RESRVEDAPP-TABNAME></RESRVEDAPP-TABNAME>
+	</DBDETAIL>
+	<RISK>
+		<URL>http://localhost:8080/AttackerSite/AttackerIndex.jsp</URL>
+		<VULENRABILITY>X-Content-Type-Options Header Missing</VULENRABILITY>
+		<STATUS>low</STATUS>
+		<URL>http://localhost:8080/AttackerSite/AttackerIndex.jsp</URL>
+		<VULENRABILITY>X-Frame-Options Header Not Set</VULENRABILITY>
+		<STATUS>low</STATUS>
+		<URL>http://localhost:8080/AttackerSite/AttackerIndex.jsp</URL>
+		<VULENRABILITY>Password Autocomplete in Browser</VULENRABILITY>
+		<STATUS>low</STATUS>
+	</RISK>
+	<mitigation name="Session Hijacking">
+			<hostdetails>
+				<session-cofig/>
+				<cookie-config/>
+				<http-only>true</http-only>
+			</hostdetails>
+	</mitigation>
+	<mitigation name="Safegaurding ReposnesHeader">
+			<hostdetails>
+				<session-cofig/>
+				<cookie-config/>
+				<http-only>true</http-only>
+			</hostdetails>
+	</mitigation>
+</CONFIG>
