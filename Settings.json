@@ -1,0 +1,27 @@
+{"widget": {
+    "debug": "off",
+    "form-gui": {
+        "object":"TextBox",
+        "name": "firstname",
+        "id": "firstname1"
+    },
+    "dbdetails": { 
+        "DBname": "DBTEST-MDB",
+        "connection": "Mydb.connection.sqldriver",
+        "keyword":[
+            {"value": "DELETE"},
+            {"value": "UPDATE"},
+            {"value": "SELECT"},
+            {"value": "INSERT"},
+            {"value": "TABLE"},
+            {"value": "VIEW"}
+          ],
+          "Reserved-Table-Name" : [
+            {"Table_name":"T_APP_DB"}
+            ]
+    },
+    "security-javascript": {
+        "response-header": "Click Here"
+    }
+}}
+
